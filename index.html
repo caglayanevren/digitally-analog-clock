@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>digitally analog clock</title>
+        <link rel="stylesheet" href="style/style.min.css" />
+    </head>
+    <body>
+        <section>
+            <div class="circle second1">
+                <span class="zero">0</span>
+                <span class="one" style="transform: translateX(-6px) translateY(57px) rotate(10deg)">1</span>
+                <span class="two" style="transform: translateX(-21px) translateY(111px) rotate(20deg)">2</span>
+                <span class="three" style="transform: translateX(-44px) translateY(161px) rotate(30deg)">3</span>
+                <span class="four" style="transform: translateX(-77px) translateY(208px) rotate(40deg)">4</span>
+                <span class="five" style="transform: translateX(-116px) translateY(247px) rotate(50deg)">5</span>
+                <span class="six" style="transform: translateX(-162px) translateY(280px) rotate(60deg)">6</span>
+                <span class="seven" style="transform: translateX(-213px) translateY(307px) rotate(70deg)">7</span>
+                <span class="eight" style="transform: translateX(-267px) translateY(319px) rotate(80deg)">8</span>
+                <span class="nine" style="transform: translateX(-323px) translateY(325px) rotate(90deg)">9</span>
+            </div>
+            <div class="circle second2">
+                <span class="zero">0</span>
+                <span class="one" style="transform: translateX(-4px) translateY(58px) rotate(12deg)">1</span>
+                <span class="two" style="transform: translateX(-24px) translateY(112px) rotate(24deg)">2</span>
+                <span class="three" style="transform: translateX(-52px) translateY(161px) rotate(36deg)">3</span>
+                <span class="four" style="transform: translateX(-92px) translateY(203px) rotate(48deg)">4</span>
+                <span class="five" style="transform: translateX(-137px) translateY(236px) rotate(60deg)">5</span>
+            </div>
+            <div class="circle minutes1">
+                <span class="zero">0</span>
+                <span class="one" style="transform: translateX(-10px) translateY(70px) rotate(18deg)">1</span>
+                <span class="two" style="transform: translateX(-42px) translateY(132px) rotate(36deg)">2</span>
+                <span class="three" style="transform: translateX(-91px) translateY(181px) rotate(54deg)">3</span>
+                <span class="four" style="transform: translateX(-154px) translateY(212px) rotate(72deg)">4</span>
+                <span class="five" style="transform: translateX(-223px) translateY(224px) rotate(90deg)">5</span>
+                <span class="six" style="transform: translateX(-293px) translateY(214px) rotate(108deg)">6</span>
+                <span class="seven" style="transform: translateX(-356px) translateY(183px) rotate(126deg)">7</span>
+                <span class="eight" style="transform: translateX(-406px) translateY(133px) rotate(144deg)">8</span>
+                <span class="nine" style="transform: translateX(-438px) translateY(71px) rotate(162deg)">9</span>
+            </div>
+            <div class="circle minutes2">
+                <span class="zero">0</span>
+                <span class="one" style="transform: translateX(-10px) translateY(60px) rotate(20deg)">1</span>
+                <span class="two" style="transform: translateX(-40px) translateY(112px) rotate(40deg)">2</span>
+                <span class="three" style="transform: translateX(-87px) translateY(150px) rotate(60deg)">3</span>
+                <span class="four" style="transform: translateX(-143px) translateY(170px) rotate(80deg)">4</span>
+                <span class="five" style="transform: translateX(-203px) translateY(170px) rotate(100deg)">5</span>
+            </div>
+            <div class="circle hour1">
+                <span class="zero">0</span>
+                <span class="one" style="transform: translateX(-25px) translateY(71px) rotate(36deg)">1</span>
+                <span class="two" style="transform: translateX(-85px) translateY(117px) rotate(72deg)">2</span>
+                <span class="three" style="transform: translateX(-160px) translateY(117px) rotate(108deg)">3</span>
+                <span class="four" style="transform: translateX(-222px) translateY(72px) rotate(144deg)">4</span>
+                <span class="five" style="transform: translateX(-245px) translateY(0px) rotate(180deg)">5</span>
+                <span class="six" style="transform: translateX(-224px) translateY(-73px) rotate(216deg)">6</span>
+                <span class="seven" style="transform: translateX(-161px) translateY(-117px) rotate(252deg)">7</span>
+                <span class="eight" style="transform: translateX(-86px) translateY(-118px) rotate(288deg)">8</span>
+                <span class="nine" style="transform: translateX(-25px) translateY(-73px) rotate(324deg)">9</span>
+            </div>
+            <div class="circle hour2">
+                <span class="zero">0</span>
+                <span class="one" style="transform: translateX(-18px) translateY(55px) rotate(45deg)">1</span>
+                <span class="two" style="transform: translateX(-73px) translateY(72px) rotate(90deg)">2</span>
+            </div>
+            <div class="line"></div>
+            <div class="hour-minute">:</div>
+            <div class="minute-second">:</div>
+            <div class="wind-up">
+                <svg class="windup-key" viewBox="0 0 752 752" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m358.94 335.65c-22.25 0-40.355 18.105-40.355 40.355 0 22.258 18.102 40.367 40.355 40.367h218.36v-80.723z" fill="currentColor" />
+                    <path
+                        d="m304.36 376c0-30.102 24.484-54.582 54.582-54.582h129.34v-7.582c0-8.6758-7.0273-15.699-15.699-15.699h-38.375c-44.422 0-81.012-33.387-86.188-76.426-0.082032-0.6875-0.19922-1.3633-0.26172-2.0586-0.32812-2.7031-0.76172-5.3906-1.3242-8.0117-8.4688-39.094-43.234-68.41-84.867-68.41-47.973 0-86.875 38.898-86.875 86.875 0 25.57 11.113 48.484 28.707 64.387l-0.085938 0.074218c22.648 19.906 37.039 49.016 37.039 81.543 0 32.027-13.969 60.676-36.008 80.543-18.145 15.926-29.66 39.227-29.66 65.254 0 47.969 38.898 86.875 86.875 86.875 41.633 0 76.398-29.309 84.867-68.41 0.5625-2.6289 1-5.3008 1.3242-8.0078 0.0625-0.69141 0.17969-1.3672 0.26172-2.0664 5.1758-43.039 41.766-76.43 86.188-76.43h38.375c8.6719 0 15.699-7.0195 15.699-15.684v-7.5859h-129.34c-30.094-0.007812-54.578-24.5-54.578-54.598zm-93.043-145.9c0-27.75 22.5-50.258 50.25-50.258 24.086 0 44.195 16.949 49.098 39.574 0.32812 1.5234 0.57422 3.0703 0.76172 4.6367 0.039062 0.39844 0.10547 0.78906 0.15625 1.1953 0.15234 1.5898 0.24219 3.207 0.24219 4.8477 0 10.422-3.1719 20.109-8.6094 28.137-9.0312 13.344-24.32 22.117-41.648 22.117-27.754 0.003907-50.25-22.496-50.25-50.25zm100.27 296.66c-0.046875 0.38672-0.11328 0.78516-0.15234 1.1953-0.19922 1.5625-0.44531 3.1172-0.77344 4.625-4.9023 22.621-25.012 39.578-49.098 39.578-27.75 0-50.25-22.504-50.25-50.25 0-27.758 22.5-50.262 50.25-50.262 17.328 0 32.617 8.7852 41.648 22.125 5.4375 8.0195 8.6094 17.703 8.6094 28.137 0.003906 1.6289-0.082031 3.25-0.23438 4.8516z"
+                        fill="currentColor"
+                    />
+                </svg>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

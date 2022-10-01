@@ -1,0 +1,208 @@
+:root {
+    --size: 700px;
+    --font-size: 48px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        position: absolute;
+
+        span {
+            font-family: sans-serif;
+            font-size: var(--font-size);
+            font-weight: 900;
+            --rotationUnit: calc((1turn / 10) * var(--char-index, 1));
+            transform: rotate(var(--rotationUnit));
+            transform-origin: center;
+        }
+    }
+}
+.line {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    border: 2px solid #fff;
+    top: calc(50% + -25px);
+    right: 0;
+    left: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 0 9999px rgba(red, 0.6);
+}
+.second1 {
+    transform: rotate(0deg);
+    transform-origin: center;
+    background-color: #ccc;
+    width: var(--size);
+    height: var(--size);
+    transition: 500ms all;
+}
+.second2 {
+    transform: rotate(0deg);
+    transform-origin: center;
+    background-color: #888;
+    width: calc(var(--size) - 100px);
+    height: calc(var(--size) - 100px);
+    transition: 500ms all;
+}
+.minutes1 {
+    transform: rotate(0deg);
+    transform-origin: center;
+    background-color: #666;
+    width: calc(var(--size) - 200px);
+    height: calc(var(--size) - 200px);
+    transition: 500ms all;
+}
+.minutes2 {
+    transform: rotate(0deg);
+    transform-origin: center;
+    background-color: #444;
+    width: calc(var(--size) - 300px);
+    height: calc(var(--size) - 300px);
+    transition: 500ms all;
+}
+.hour1 {
+    transform: rotate(0deg);
+    transform-origin: center;
+    background-color: #222;
+    width: calc(var(--size) - 400px);
+    height: calc(var(--size) - 400px);
+    transition: 500ms all;
+}
+.hour2 {
+    transform: rotate(0deg);
+    transform-origin: center;
+    background-color: #000;
+    width: calc(var(--size) - 500px);
+    height: calc(var(--size) - 500px);
+    transition: 500ms all;
+}
+.zero {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 0;
+}
+.one {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 1;
+}
+.two {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 2;
+}
+.three {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 3;
+}
+.four {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 4;
+}
+.five {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 5;
+}
+.six {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 6;
+}
+.seven {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 7;
+}
+.eight {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 8;
+}
+.nine {
+    position: absolute;
+    right: 13px;
+    top: calc(50% - (var(--font-size) / 2));
+    --char-index: 9;
+}
+.hour-minute {
+    left: 146px;
+    font-family: sans-serif;
+    font-size: calc(var(--font-size) * 2 / 3);
+}
+.minute-second {
+    left: 246px;
+    font-family: sans-serif;
+    font-size: calc(var(--font-size) * 2 / 3);
+}
+.wind-up {
+    left: -34px;
+    .windup-key {
+        height: 45px;
+        width: 45px;
+        color: #fff;
+        animation-duration: 950ms;
+        animation-name: roll;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        transform-origin: center;
+    }
+}
+@keyframes roll {
+    0% {
+        height: 45px;
+        width: 45px;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    50% {
+        height: 45px;
+        width: 45px;
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+    100% {
+        height: 45px;
+        width: 45px;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
